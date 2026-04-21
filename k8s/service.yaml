@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: devops1-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: devops1-app
   ports:

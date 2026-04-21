@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git 'https://github.com/jnicolaugraupera/devops1.git'
-            }
-        }
-
         stage('Build Docker') {
             steps {
                 sh 'docker build -t devops1:latest .'
